@@ -25,8 +25,8 @@ exact_s = double(abs(exact-simp)) % Asolute Error
 % Question 3 & 4
 
 n = [10,20,50,100];
-I = zeros(4,3);
-J = zeros(4,2);
+I = zeros(4,3); % empty matrix to stored all n composite simpson's integral estimate 
+J = zeros(4,2); % empty matrix to stored all n composite trapezoid integral estimate 
 for j = 1:length(n)
     h = (b-a)/n(j);
     I(j,1) = f(a) + f(b);
@@ -46,6 +46,9 @@ comp_trap(j) = (J(j,1)+2*J(j,2))*h/2;
 error_est_simp(j) = (b-a)*h^4*df_4(1)/180;
 error_est_trap(j) = (b-a)*h^2*df_2(1)/12; 
 end
+
+comp_simp
+comp_trap
 
 error_est_simp = double(error_est_simp)  % Error estimate of Composite Simpson
 error_est_trap = double(error_est_trap) % Error estimiate of Composite Trapezoid
