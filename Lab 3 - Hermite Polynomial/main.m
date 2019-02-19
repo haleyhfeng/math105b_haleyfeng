@@ -1,7 +1,3 @@
-%X = [1.3,1.6,1.9];
-%Y = [0.6200860,0.4554022, 0.2818186];
-%YP = [-0.5220232, -0.5698959, -0.5811571];
-
 X = [1,2,3];
 Y = [1.105170918, 1.491824698, 2.459603111];
 YP = [0.2210341836, 0.5967298792, 1.475761867];
@@ -31,11 +27,11 @@ sum = sum + Q(i+1,i+1)*prod;
 eval = [eval,sum];
 end
 
-% Question 2
+% Using Hermite polynomial to interpolate the function
 H_3 = eval(3) % Using point x0,x1
 H_5 = eval(5) % Using point x0,x1,x2
 
-% Question 3
+% Estimate of the errors
 estimate_of_error_3 = H_3 - eval(2)
 estimate_of_error_5 = H_5 - eval(4)
 
