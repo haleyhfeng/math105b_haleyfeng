@@ -1,6 +1,6 @@
 # Project 4: Cubic Spline Interpolation
 
-Description: The goal of this project is to write a function in Matlab to compute the coefficient for a cubic spline interpolating function and to use the coefficients to compute and graph a cubic spline interpolating polynomial. Furthermore, I will compute and graph the Lagrange interpolating polynomial as comparison to the natural splines by using the function f(x)=x/(1/4+x^2).
+Description: The goal of this project is to write a function in Matlab to compute the coefficient for a cubic spline interpolating function and to use the coefficients to compute and graph a cubic spline interpolating polynomial. Furthermore, I will compute and graph the Lagrange interpolating polynomial as comparison to the natural splines by using the function f(x)=x/((1/4)+x^2).
 
 ## Compile/Run the code
 
