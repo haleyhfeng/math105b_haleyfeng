@@ -6,7 +6,7 @@ df_3 = diff(f,x,3); % second derivative
 df_4 = diff(f,x,4); % fourth derivative
 n = [11,21,51,101];
 
-% Question 1
+% Approximate f'(xi) for i = 1,..,n-1 using forward, backward, and central difference
 for i = 1:length(n)
     E = zeros(1,n(i)-1); % empty list to store values 
     F = zeros(1,n(i)-1);
@@ -53,7 +53,7 @@ max_est_error_1(i) = max(est_error_1);
 max_est_error_2(i) = max(est_error_2);
 end
 
-% Question 2
+% Exact Error and Error Estimate
 
 max_1
 max_2
@@ -80,7 +80,7 @@ ylabel('Maximum Absolute Error')
 legend('Error of Central','Estimate Error')
 
 
-% Question 3
+% Approximate f''(xi) for i = 1,..,n-1 using central difference
 figure(3)
 for i = 1:length(n)
     x = zeros(1,n(i)-1); % empty list to store values 
@@ -122,7 +122,7 @@ xlabel('n')
 ylabel('Maximum Absolute Error')
 legend('Error of Central','Estimate Error')
 
-% Question 5
+% Calculate the derivative f'(0) using forward difference
 N = [1,2,5,10,20,40];
 for i = 1:length(N)
     n = N(i);
