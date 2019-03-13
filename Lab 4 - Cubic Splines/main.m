@@ -1,7 +1,7 @@
 X = [-2.4061, -1.083, -0.644, -0.4068, -0.2448, -0.1158, 0, 0.1158, 0.2448, 0.4068, 0.644, 1.083, 2.4061];
 Y = [-0.3984, -0.7611, -0.9688, -0.9791, -0.7899, -0.4397, 0, 0.4397, 0.7899, 0.9791, 0.9688, 0.7611, 0.3984];
 
-% Question 1
+% Computing and graphing the natural cubic spline 
 [a,b,c,d] = natural_splines(X,Y)
 n = length(X);
 x = linspace(-2,2,10);
@@ -17,7 +17,7 @@ S % cubic spline interpolants
 subplot(3,1,1);
 plot(x,S);
 
-% Question 2
+% Computing with Lagrange polynomial interpolant
 subplot(3,1,2);
 for i = 1:length(x)
     L(i) = f_lagrange(X,Y,x(i));
@@ -25,7 +25,7 @@ end
 L % coefficients of lagrange polynomial
 plot(x,L)
 
-% Question 3
+% Evaluating and graphing actual function
 subplot(3,1,3);
 for i = 1:length(x)
     y(i) = x(i)/(1/4+x(i)^2); 

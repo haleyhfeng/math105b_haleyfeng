@@ -1,6 +1,6 @@
 # Project 3: Hermite Polynomial
 
-Description: The goal of this project is to write a function in Matlab to compute the coefficients for a Hermite polynomial interpolating function using divided differences and then to use the coefficients to compute the Hermite interpolating polynomial. Furthermore, I will implement the Hermite polynomial through an example of interpolating the function f(x) =e0.1x2at a point x and at different degree. 
+Description: The goal of this project is to write a function in Matlab to compute the coefficients for a Hermite polynomial interpolating function using divided differences and then to use the coefficients to compute the Hermite interpolating polynomial. Furthermore, I will implement the Hermite polynomial through an example of interpolating the function f(x)=e^(0.1^2) at a point x and at different degree. 
 
 ## Compile/Run the code
 

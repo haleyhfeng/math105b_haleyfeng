@@ -1,11 +1,11 @@
-% Question 1
+% Calculate the exact value of the intergral
 syms x
 f(x) = x*log(x);
 a = 1;
 b = 2;
 exact = double(int(f,a,b)) % Exact Value
 
-% Question 2
+% Using the trapezoid and Simpon's rule over the whole interval
 
 h_t = b - a;
 trap = double((f(a) + f(b))*h_t/2) % Trapezoid Rule
@@ -22,8 +22,8 @@ df_4 = diff(f,x,4);
 error_s = double(df_4(1)*h_s^5/90) % Error estimate of Simpson
 exact_s = double(abs(exact-simp)) % Asolute Error
 
-% Question 3 & 4
-
+% Algorithms to perform numerical quadrature for a general indefinite integral
+% Using the composite trapezoid and Simpson's rule
 n = [10,20,50,100];
 I = zeros(4,3); % empty matrix to stored all n composite simpson's integral estimate 
 J = zeros(4,2); % empty matrix to stored all n composite trapezoid integral estimate 

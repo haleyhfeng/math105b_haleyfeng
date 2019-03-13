@@ -1,4 +1,3 @@
-% Question 1 & 2
 X = [0.0,0.1,0.3,0.6,1.0];
 Y = [-6.0,-5.89483,-5.65014,-5.17788,-4.28172];
 x = 0.05; % evaluation point
@@ -27,7 +26,7 @@ eval_x
 % Error of using the forth degree Lagrange interpolating polynomial
 Error = eval_x(4)-eval_x(3)
 
-% Question 3
+% Adding the point x = 1.1, f(x) = -3.99583
 X = [0.0,0.1,0.3,0.6,1.0,1.1];
 Y = [-6.0,-5.89483,-5.65014,-5.17788,-4.28172,-3.99583];
 
